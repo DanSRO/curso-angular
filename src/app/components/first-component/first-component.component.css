@@ -5,3 +5,14 @@ h2{
 h3{
     color:red;
 }
+
+.title{
+    background: black;
+    color:aqua;
+    padding: 15px;
+}
+
+p{
+    color: red;
+    padding: 15px;
+}

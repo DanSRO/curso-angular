@@ -11,4 +11,6 @@ export class ParentDataComponent {
   @Input() name:string = '';
   @Input() userData!:{email:string, role:string};
   @Input() userHobbies!: string[];
+  @Input() userData2:{email:string, role:string} = {email:'', role:''};
+  @Input() userHobbies2: string[] = [];
 }

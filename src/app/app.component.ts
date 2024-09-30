@@ -6,6 +6,9 @@ import { DirectivesComponent } from './components/directives/directives.componen
 import { IfRenderComponent } from './components/if-render/if-render.component';
 import { EventosComponent } from './components/eventos/eventos.component';
 import { EmiterComponent } from './components/emiter/emiter.component';
+import { TwoWayDataBindingComponent } from './components/two-way-data-binding/two-way-data-binding.component';
+import { ListRenderComponent } from './components/list-render/list-render.component';
+import { PipesComponent } from './components/pipes/pipes.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -16,7 +19,10 @@ import { EmiterComponent } from './components/emiter/emiter.component';
     DirectivesComponent,
     IfRenderComponent,
     EventosComponent,
-    EmiterComponent
+    EmiterComponent,
+    TwoWayDataBindingComponent,
+    ListRenderComponent,
+    PipesComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

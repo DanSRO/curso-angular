@@ -22,6 +22,8 @@ import { PipesComponent } from './components/pipes/pipes.component';
     EventosComponent,
     EmiterComponent,
     TwoWayDataBindingComponent,
+    ListRenderComponent,
+    PipesComponent,
     FormsModule,
     ListRenderComponent,
     PipesComponent,

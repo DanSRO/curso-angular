@@ -7,6 +7,7 @@ import { IfRenderComponent } from './components/if-render/if-render.component';
 import { EventosComponent } from './components/eventos/eventos.component';
 import { EmiterComponent } from './components/emiter/emiter.component';
 import { TwoWayDataBindingComponent } from './components/two-way-data-binding/two-way-data-binding.component';
+import { FormsModule } from '@angular/forms';
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { PipesComponent } from './components/pipes/pipes.component';
 @Component({
@@ -22,7 +23,10 @@ import { PipesComponent } from './components/pipes/pipes.component';
     EmiterComponent,
     TwoWayDataBindingComponent,
     ListRenderComponent,
-    PipesComponent
+    PipesComponent,
+    FormsModule,
+    ListRenderComponent,
+    PipesComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

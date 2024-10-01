@@ -6,13 +6,10 @@ import { DirectivesComponent } from './components/directives/directives.componen
 import { IfRenderComponent } from './components/if-render/if-render.component';
 import { EventosComponent } from './components/eventos/eventos.component';
 import { EmiterComponent } from './components/emiter/emiter.component';
-<<<<<<< Updated upstream
 import { TwoWayDataBindingComponent } from './components/two-way-data-binding/two-way-data-binding.component';
 import { FormsModule } from '@angular/forms';
-=======
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { PipesComponent } from './components/pipes/pipes.component';
->>>>>>> Stashed changes
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -24,13 +21,10 @@ import { PipesComponent } from './components/pipes/pipes.component';
     IfRenderComponent,
     EventosComponent,
     EmiterComponent,
-<<<<<<< Updated upstream
     TwoWayDataBindingComponent,
-    FormsModule
-=======
+    FormsModule,
     ListRenderComponent,
     PipesComponent,
->>>>>>> Stashed changes
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

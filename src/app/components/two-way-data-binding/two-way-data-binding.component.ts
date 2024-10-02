@@ -9,6 +9,14 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './two-way-data-binding.component.css'
 })
 export class TwoWayDataBindingComponent {
-  name:string='';
+  data={
+    name:'',
+    age:'',
+    sex:'',
+  };
+  details:string='';
 
+  showDetails(){
+    return this.details = `Nome: ${this.data.name} , idade: ${this.data.age} anos e sexo: ${this.data.sex}`;
+  }
 }

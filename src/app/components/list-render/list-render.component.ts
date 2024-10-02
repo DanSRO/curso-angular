@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { NgFor } from '@angular/common';
 import { Animal } from '../../Animal';
 import { ListService } from '../../services/list.service';
+import { CarListComponent } from '../car-list/car-list.component';
 
 @Component({
   selector: 'app-list-render',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor, CarListComponent],
   templateUrl: './list-render.component.html',
   styleUrl: './list-render.component.css'
 })

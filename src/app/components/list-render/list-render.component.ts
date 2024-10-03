@@ -18,9 +18,9 @@ export class ListRenderComponent {
     {name:'Frida', type:'dog', age:3},
     {name:'Bob', type:'horse', age:10},
   ]
-  
+  constructor(private listService:ListService){}
   animalsDetail:string = '';
-  listService: ListService = new ListService;
+  // listService: ListService = new ListService;
   showAge(animal: Animal): void{
     this.animalsDetail = `O pet ${animal.name} tem ${animal.age} anos de idade.`;
   }

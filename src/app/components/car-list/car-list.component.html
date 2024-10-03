@@ -1,8 +1,11 @@
 <h2>Lista de Carros</h2>
 <ul>
-    <li *ngFor="let carro of car">
+    <li *ngFor="let carro of cars">
         Marca: "{{carro.nome}} " 
         Ano: "{{carro.ano}} " 
         Cor: "{{carro.cor}} "
+        <button (click)="showCar(carro)">Mostrar carro!</button>
+        <button (click)="removeCar(carro)">Excluir carro!</button>
     </li>
 </ul>
+<h3>{{carDetails}}</h3>

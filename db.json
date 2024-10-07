@@ -5,5 +5,25 @@
         {"id": 3, "name": "Frida", "type": "Dog", "age": 11},
         {"id": 4, "name": "Bob", "type": "Horse", "age": 2},
         {"id": 5, "name": "Paco", "type": "Bird", "age": 1}
+    ],
+    "cars":[
+        {
+            "id":1,
+            "nome":"Fusca",
+            "ano":1974,
+            "cor":"Azul"
+        },
+        {
+            "id":2,
+            "nome":"'F-10'",
+            "ano":1990,
+            "cor":"Preta"
+        },
+        {
+            "id":3,
+            "nome":"Veraneio",
+            "ano":2001,
+            "cor":"Cinza"
+        }
     ]
 }

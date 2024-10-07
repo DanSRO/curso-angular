@@ -7,9 +7,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ListService {
-  private apiUrl = 'http://localhost:3000/animals'
+  private apiUrl = 'http://localhost:3000'
   getAll(): Observable<Animal[]> {    
-      return this.http.get<Animal[]>(`${this.apiUrl}`);    
+      return this.http.get<Animal[]>(`${this.apiUrl}/animals`);    
   }
 
   constructor(private http:HttpClient) { }

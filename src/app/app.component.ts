@@ -10,6 +10,8 @@ import { TwoWayDataBindingComponent } from './components/two-way-data-binding/tw
 import { FormsModule } from '@angular/forms';
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { PipesComponent } from './components/pipes/pipes.component';
+import { ItemDetailComponent } from './components/item-detail/item-detail.component';
+import { AnimalListComponent } from './components/animal-list/animal-list.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -28,6 +30,8 @@ import { PipesComponent } from './components/pipes/pipes.component';
     FormsModule,
     ListRenderComponent,
     PipesComponent,
+    ItemDetailComponent,
+    AnimalListComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

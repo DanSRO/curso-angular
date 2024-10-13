@@ -1,11 +1,18 @@
 <h2>Lista de Carros</h2>
-<ul>
-    <li *ngFor="let carro of cars">
-        Marca: "{{carro.nome}} " 
-        Ano: "{{carro.ano}} " 
-        Cor: "{{carro.cor}} "
-        <button (click)="showCar(carro)">Mostrar carro!</button>
-        <button (click)="removeCar(carro)">Excluir carro!</button>
-    </li>
-</ul>
+<div *ngIf="car; else list">
+    <div class="divisao">
+      <p>Id: {{car.id}}</p>
+      <h2>Nome: {{car.nome}}</h2>
+      <p>Cor: {{car.cor}}</p>
+    </div>
+  </div>
+  <ng-template #list>
+    <ul>
+      <li *ngFor="let car of cars">
+        Marca: <a [routerLink]="['/car', car.id]">{{car.nome}}</a> - Ano: {{car.ano}} - Cor: {{car.cor}}
+        <button (click)="showCar(car)">Mostrar carro!</button>
+        <button (click)="removeCar(car)">Excluir carro!</button>
+      </li>
+    </ul>
+  </ng-template>
 <h3>{{carDetails}}</h3>

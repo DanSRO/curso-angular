@@ -1,3 +1,10 @@
-<div *ngIf="animals" class="divisao">
-    <p>Id: </p>
+<div *ngIf="animal" class="divisao">
+    <p>Id: {{animal.id}}</p>
+    <h2>Nome: {{animal.name}}</h2>
+    <p>Tipo: {{animal.type}}</p>    
+</div>
+<div *ngIf="car" class="divisao">
+    <p>Id: {{car.id}}</p>
+    <h2>Nome: {{car.nome}}</h2>
+    <p>Cor: {{car.cor}}</p>    
 </div>

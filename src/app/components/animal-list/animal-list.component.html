@@ -1,0 +1,20 @@
+<h2>Lista de animais</h2>
+<div *ngIf="animal; else list">
+    <div class="divisao">
+        <p>Id: {{animal.id}}</p>
+        <h2>Nome: {{animal.name}}</h2>
+        <p>Tipo: {{animal.type}}</p>        
+    </div>
+</div>
+<ng-template #list>        
+    <ul>        
+        <li *ngFor="let animal of animals">
+            Nome: <a routerLink="/animal/{{ animal.id }}">{{ animal.name }}</a> 
+            - Tipo: {{animal.type}} 
+            <button (click)="showAge(animal)">Mostrar idade</button>
+            <button (click)="removeAnimal(animal)">Excluir</button>
+        </li>
+    </ul>
+</ng-template>
+    <!-- <button (click)="getAnimals()">Mostrar no console</button> -->
+    <h3>{{animalDetails}}</h3>

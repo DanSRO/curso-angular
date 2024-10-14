@@ -1,0 +1,18 @@
+<h2>Lista de Alunos</h2>
+<div *ngIf="aluno; else list">    
+    <div class="divisao">
+        <p>Matrícula: {{aluno.id}}</p>
+        <h2>Nome: {{aluno.nome}}</h2>
+        <p>Disciplina: {{aluno.disciplina}}</p>
+    </div>
+</div>
+<ng-template #list>
+    <ul>
+        <li *ngFor="let aluno of alunos">            
+            Matrícula: <a [routerLink]="['/alunos', aluno.id]">{{ aluno.id }}</a>
+            Nome: {{aluno.nome}}
+            Disciplina: {{aluno.disciplina}}            
+        </li>
+    </ul>
+</ng-template>
+<h3>{{alunoDetails}}</h3>

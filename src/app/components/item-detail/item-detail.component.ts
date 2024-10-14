@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
 import { NgIf } from '@angular/common';
-import { ListService } from '../../services/list.service';
+import { AnimalService } from '../../services/animal.service';
 import { ActivatedRoute } from '@angular/router';
 import { Animal } from '../../Animal';
 import { Carros } from '../../Carros';
+import { Alunos } from '../../Alunos';
+import { CarService } from '../../services/car.service';
+import { AlunoService } from '../../services/aluno.service';
 
 @Component({
   selector: 'app-item-detail',
@@ -15,8 +18,13 @@ import { Carros } from '../../Carros';
 export class ItemDetailComponent {
   animal?: Animal;
   car?:Carros;
+  aluno?:Alunos;
 
-  constructor(private listService:ListService, private route: ActivatedRoute){
+  constructor(
+    private animalService:AnimalService, 
+    private carService:CarService, 
+    private alunoService:AlunoService,
+    private route: ActivatedRoute){
   }
 
   ngOnInit(): void{}

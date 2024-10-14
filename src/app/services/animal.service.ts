@@ -2,12 +2,11 @@ import { Injectable } from '@angular/core';
 import { Animal } from '../Animal';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Carros } from '../Carros';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ListService {
+export class AnimalService {
   private apiUrl = 'http://localhost:3000'
   constructor(private http:HttpClient) { }
 

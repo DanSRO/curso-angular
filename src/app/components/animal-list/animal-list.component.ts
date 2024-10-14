@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgFor } from '@angular/common';
 import { ActivatedRoute, RouterLink, RouterOutlet } from '@angular/router';
-import { ListService } from '../../services/list.service';
+import { AnimalService } from '../../services/animal.service';
 import { Animal } from '../../Animal';
 import { NgIf } from '@angular/common';
 
@@ -16,7 +16,7 @@ export class AnimalListComponent implements OnInit{
   animals:Animal[]=[];
   animal?:Animal;
 
-constructor( private listService:ListService, private route:ActivatedRoute){}
+constructor( private animalService:AnimalService, private route:ActivatedRoute){}
 
 animalDetails:string='';
 
@@ -32,10 +32,10 @@ ngOnInit(): void {
 }
 
 getAnimal(id:number){  
-  this.listService.getItemAnimal(id).subscribe((x) => (this.animal = x));
+  this.animalService.getItemAnimal(id).subscribe((x) => (this.animal = x));
 }
 getAnimals(){  
-  this.listService.getAllAnimals().subscribe((x) => (this.animals = x));
+  this.animalService.getAllAnimals().subscribe((x) => (this.animals = x));
 }
   showAge(animal: Animal): void{
     this.animalDetails = `O animal ${animal.name} com ${animal.age} de idade, é um ${animal.type}`;
@@ -43,6 +43,6 @@ getAnimals(){
 
   removeAnimal(animal: Animal):void{
     console.log("Excluindo animal...");
-    this.animals = this.listService.remove(this.animals, animal);
+    this.animals = this.animalService.remove(this.animals, animal);
   }
 }

@@ -25,5 +25,22 @@
             "ano":2001,
             "cor":"Cinza"
         }
+    ],
+    "alunos":[
+        {
+            "id":1,
+            "nome":"Filipe",
+            "disciplina": "Matemática"
+        },
+        {
+            "id":2,
+            "nome":"Joana",
+            "disciplina":"Física Quântica"
+        },
+        {
+            "id":3,
+            "nome":"Vander",
+            "disciplina":"Geografia crítica"
+        }
     ]
 }

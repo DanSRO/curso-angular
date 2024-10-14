@@ -12,6 +12,7 @@ import { ListRenderComponent } from './components/list-render/list-render.compon
 import { PipesComponent } from './components/pipes/pipes.component';
 import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 import { AnimalListComponent } from './components/animal-list/animal-list.component';
+import { AlunosComponent } from './components/alunos/alunos.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -31,7 +32,8 @@ import { AnimalListComponent } from './components/animal-list/animal-list.compon
     ListRenderComponent,
     PipesComponent,
     ItemDetailComponent,
-    AnimalListComponent
+    AnimalListComponent,
+    AlunosComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
